@@ -7,7 +7,7 @@
 + 当前效果图预览：
   + 下一步任务：实现轮播
 
-<img src="./image/day2.gif">
+<img src="./image/day3.gif">
 
 
 ## 技术栈
