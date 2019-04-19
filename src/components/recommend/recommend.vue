@@ -1,6 +1,7 @@
 <template>
  <div class="recommend">
-     <div class="recommend-content">
+     <scroll class="recommend-content" :data="discList">
+       <div>
          <div v-if="recommends.length"  class="slider-wrapper">
              <slider>
                  <div v-for="item in recommends">
@@ -16,7 +17,7 @@
              </h1>
              <ul>
                <li v-for="item in discList" class="item">
-                 <div class="item">
+                 <div class="icon">
                    <img :src="item.imgurl" width="60" height="60">
                  </div>
                  <div class="text">
@@ -28,10 +29,12 @@
              </ul>
          </div>
      </div>
- </div>
+    </scroll>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
+import Scroll from 'base/scroll/scroll'
 import Slider from 'base/slider/slider'
 import {getRecommend, getDiscList} from 'api/recommend'
 import {ERR_OK} from 'api/config'
@@ -64,7 +67,8 @@ export default {
     }
   },
   components: {
-    Slider
+    Slider,
+    Scroll
   }
 }
 </script>
