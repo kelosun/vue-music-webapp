@@ -13,7 +13,7 @@
          </div>
          <div class="recommend-list">
              <h1 class="list-title">
-                 作者KELO亲情推荐
+                 热门歌单推荐
              </h1>
              <ul>
                <li v-for="item in discList" class="item">
