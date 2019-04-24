@@ -4,10 +4,10 @@
 
 基于 **Vue 全家桶 (2.x)** 制作的移动端原生音乐WebApp ，无辣鸡推送、功能完备、UI美观、交互一流。
 
-+ 当前效果图预览：实现歌手页面右侧快速入口
-  + 下一步任务：完成歌手详情页状态栏
++ 当前效果图预览：实现歌手页面开发
+  + 下一步任务：完成歌手详情页
 
-<img src="./image/day6.gif" style="vertical-align:middle">
+<img src="./image/day7.gif" style="vertical-align:middle">
 
 
 ## 技术栈
