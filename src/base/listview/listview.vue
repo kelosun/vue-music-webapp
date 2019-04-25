@@ -6,7 +6,7 @@
         {{group.title}}
       </h2>
       <ul>
-        <li class="list-group-item" v-for="item in group.items">
+        <li @click="selectItem(item)" class="list-group-item" v-for="item in group.items">
           <!-- <img class="avatar" :src="item.avatar"/> -->
 
           <!-- 采用懒加载 -->
@@ -78,6 +78,9 @@ export default {
   },
 
   methods: {
+    selectItem(item) {
+      this.$emit('select', item)
+    },
     onShortcutTouchStart(e) {
       let anchorIndex = getData(e.target, 'index')
       let firstTouch = e.touches[0]
